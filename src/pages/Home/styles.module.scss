@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
 
     div {
@@ -19,6 +19,12 @@
       justify-content: center;
       gap: 1rem;
     }
+    .buscador {
+      display: flex;
+      gap: 1rem; // Espaciado entre la barra de búsqueda y el botón
+      align-items: center;
+    }
+    
 
     span {
       color: #212121;

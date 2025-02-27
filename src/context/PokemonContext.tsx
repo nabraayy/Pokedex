@@ -5,17 +5,24 @@ import {
   PokemosByTypeResult,
   PokeType,
 } from "../interfaces/types";
-// Definimos el estado inicial
+
 const initialState = {
   capturedPokemons: JSON.parse(localStorage.getItem("capturedPokemons") || "[]"),
 };
 
-// Definimos las acciones
+
 const actionTypes = {
   CAPTURE: "CAPTURE",
   RELEASE: "RELEASE",
 };
-
+interface PokemonData {
+  id: number;
+  name: string;
+  sprite: string;
+  height: number;
+  weight: number;
+  capturedAt: string; // Fecha y hora de captura
+}
 interface State {
   capturedPokemons: string[];
 }
